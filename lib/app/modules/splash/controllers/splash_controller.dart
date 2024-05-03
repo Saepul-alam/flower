@@ -10,7 +10,7 @@ class SplashController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    GetStorage().write("status", "login"); // Perbaikan: Menggunakan GetStorage().write
+    GetStorage().write("status", "login");
   }
 
   @override
@@ -19,10 +19,10 @@ class SplashController extends GetxController {
     print("onready splashscreencontroller");
     if (GetStorage().read("status") != "" && GetStorage().read("status") != null) {
       Future.delayed(const Duration(seconds: 3), () {
-        Get.offAllNamed(Routes.LOGIN); // Perbaikan: Menggunakan Get.offAllNamed
+        Get.offAllNamed(Routes.LOGIN);
       });
     } else {
-      Get.offAllNamed(Routes.LOGIN); // Perbaikan: Menggunakan Get.offAllNamed
+      Get.offAllNamed(Routes.LOGIN);
     }
   }
 

@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(''),
+        title: Text('Welcome'),
         centerTitle: true,
         actions: [
           IconButton(
@@ -39,17 +39,17 @@ class HomeView extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight:
-                              FontWeight.bold, // membuat teks menjadi bold
+                              FontWeight.bold, 
                         ),
                       ),
                     ),
-                    SizedBox(width: 70), // Add some spacing
+                    SizedBox(width: 70), 
                     Positioned(
                       width: 10,
                       right: 0,
                       child: CircleAvatar(
                         backgroundColor:
-                            Colors.blue, // You can change the color as needed
+                            Colors.blue,
                         radius: 50,
 
                         child: Obx(
@@ -97,7 +97,7 @@ class HomeView extends StatelessWidget {
                   style: TextStyle(fontSize: 14),
                 ),
               ),
-              Align( // Positioned the button to center horizontally and bottom
+              Align(
                 alignment: Alignment.center,
                 child: ElevatedButton(
                   onPressed: () async {
@@ -131,16 +131,17 @@ class HomeView extends StatelessWidget {
                       },
                     );
                   },
-                  // Set width to 300 and height to 40
                   child: SizedBox(
                     width: 300,
                     height: 40,
                     child: Center(
-                      child: Text('Upload Image', style: TextStyle(fontSize: 14, color: Colors.white)), // Ubah warna teks menjadi putih disini
+                      child: Text('Upload Image',
+                          style: TextStyle(fontSize: 14, color: Colors.white)),
                     ),
                   ),
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFD567CD)), // Ubah warna latar belakang tombol disini
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Color(0xFFD567CD)),
                   ),
                 ),
               ),
